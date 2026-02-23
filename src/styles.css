@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ud-navy: #111827;
+  --ud-red: #dc2626;
+  --ud-teal: #0d9488;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply antialiased bg-slate-50 text-slate-900;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold shadow-md transition;
+  background: linear-gradient(135deg, #111827, #1e40af);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold border border-slate-200 bg-white/80 text-slate-900 shadow-sm transition;
+}
+
+.btn-outline:hover {
+  box-shadow: 0 10px 25px rgba(148, 163, 184, 0.4);
+}
+
+/* Hero background */
+.hero-gradient {
+  background: radial-gradient(circle at top left, #0d9488 0, #1e40af 40%, #020617 100%);
+}
+
+/* Card styling */
+.card {
+  @apply bg-white rounded-2xl shadow-lg border border-slate-100;
+}
+
+/* Navbar shadow on scroll helper (optional JS later if needed) */
+.input{
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #e2e8f0;
+  font-size:14px;
+}
+.input:focus{
+  outline:none;
+  border-color:#1e40af;
+}
+.card{
+  background:white;
+  border:1px solid #e2e8f0;
+  border-radius:16px;
+}
+.result-box{
+  background:#f8fafc;
+  padding:12px;
+  border-radius:8px;
+  font-weight:600;
+  font-size:14px;
+}
