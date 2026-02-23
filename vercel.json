@@ -3,10 +3,7 @@
     {
       "source": "/(.*)",
       "has": [
-        {
-          "type": "host",
-          "value": "udhayship.com"
-        }
+        { "type": "host", "value": "udhayship.com" }
       ],
       "destination": "https://www.udhayshipping.com/$1",
       "permanent": true
@@ -14,16 +11,15 @@
     {
       "source": "/(.*)",
       "has": [
-        {
-          "type": "host",
-          "value": "www.udhayship.com"
-        }
+        { "type": "host", "value": "www.udhayship.com" }
       ],
       "destination": "https://www.udhayshipping.com/$1",
       "permanent": true
     }
   ],
   "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }
